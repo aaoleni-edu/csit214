@@ -11,8 +11,10 @@ int main() {
         double formerSalary, amount, newAnnual, newMonthly;
         char exit;
 
+        // get former salary
         cout << "Enter former annual salary:\n";
         cin >> formerSalary;
+        // calculate new salary and display it
         amount = formerSalary * PAY_INCREASE;
         newAnnual = formerSalary + amount;
         newMonthly = newAnnual / 12;
@@ -20,6 +22,7 @@ int main() {
         cout << "New annual salary: " << newAnnual << endl;
         cout << "New monthly salary: " << newMonthly << endl;
 
+        // exit application
         cout << "Exit? (y/n):\n";
         cin >> exit;
         if (exit == 'y') {
